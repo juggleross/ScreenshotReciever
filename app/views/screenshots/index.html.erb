@@ -2,10 +2,13 @@
 
 <h1>Screenshots</h1>
 
-<div id="lightgallery" class="gallery-block">
-  <% @screenshots.each do |screenshot| %>
-    <a href="<%= screenshot.photo_url %>" >
-        <img src="<%= screenshot.photo_url %>"  class = "main-screenshot" name='hello' alt=<%= screenshot.name %>/>
-    </a>
-  <% end %>
+<div class="gallery-block">
+  <div id="lightgallery">
+    <% @screenshots.each do |screenshot| %>
+      <a href="<%= screenshot.photo_url %>" >
+          <img src="<%= screenshot.photo_url %>"  class = "main-screenshot" name='hello' alt=<%= screenshot.name %>/>
+      </a>
+    <% end %>
+  </div>
+  <%= paginate @screenshots %>
 </div>

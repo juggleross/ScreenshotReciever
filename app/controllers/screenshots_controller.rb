@@ -7,7 +7,7 @@ class ScreenshotsController < ApplicationController
   # GET /screenshots
   # GET /screenshots.json
   def index
-    @screenshots = Screenshot.order(created_at: :desc)
+    @screenshots = Screenshot.order(created_at: :desc).page params[:page]
   end
 
 

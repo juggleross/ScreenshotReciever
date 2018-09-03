@@ -30,6 +30,8 @@ gem 'carrierwave'
 gem 'carrierwave-base64'
 
 gem 'webpacker'
+
+gem 'kaminari'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
