@@ -9,7 +9,7 @@ class ScreenshotsController < ApplicationController
   # GET /screenshots
   # GET /screenshots.json
   def index
-    @screenshots = Screenshot.all
+    @screenshots = Screenshot.order(created_at: :desc)
   end
 
   # GET /screenshots/1

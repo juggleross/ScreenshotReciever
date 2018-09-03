@@ -2,28 +2,10 @@
 
 <h1>Screenshots</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th>Name</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @screenshots.each do |screenshot| %>
-      <tr>
-        <td><a download="test.png" href=<%= screenshot.photo %>> <%= screenshot.name %></a></td>
-        <td><%= link_to image_tag(screenshot.photo_url, class: "main-screenshot", border: 3), screenshot %></td>
-
-        <td><%= link_to 'Edit', edit_screenshot_path(screenshot) %></td>
-        <td><%= link_to 'Destroy', screenshot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Screenshot', new_screenshot_path %>
+<div id="lightgallery" class="gallery-block">
+  <% @screenshots.each do |screenshot| %>
+    <a href="<%= screenshot.photo_url %>" >
+        <img src="<%= screenshot.photo_url %>"  class = "main-screenshot" name='hello' alt=<%= screenshot.name %>/>
+    </a>
+  <% end %>
+</div>

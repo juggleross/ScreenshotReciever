@@ -1,6 +1,14 @@
 // Place all the styles related to the Screenshots controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "lightgallery/dist/css/lightgallery.css";
+
 .main-screenshot {
-  width: 20%;
+  width: 30%;
+  border: 2px solid black;
+}
+
+.gallery-block {
+  text-align: center;
 }

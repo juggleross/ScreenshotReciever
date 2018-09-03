@@ -9,7 +9,10 @@
 //
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
-//
-//= require rails-ujs
+
+//= require jquery
+//= require lightgallery
+//= require lg-thumbnail
+//= require lg-fullscreen
 //= require turbolinks
 //= require_tree .
