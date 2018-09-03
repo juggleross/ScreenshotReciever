@@ -3,6 +3,7 @@
 <h1>Screenshots</h1>
 
 <div class="gallery-block">
+  <%= message_for_empty_gallery @screenshots %>
   <div id="lightgallery">
     <% @screenshots.each do |screenshot| %>
       <a href="<%= screenshot.photo_url %>" >
