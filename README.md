@@ -1,3 +1,14 @@
+# Installation 
+
+Install app
+
+```
+  bundle istall
+  yarn install
+  
+  rake db:create 
+  rake db:migrate
+```
 # ScreenshotReciever
 
 This is an app for storing screenshots from chromeExtension.
