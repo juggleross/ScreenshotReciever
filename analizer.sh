@@ -11,10 +11,10 @@ echo -e "${HEIGLIGHT}
 rubocop OK
 ${NO_COLOR}" && \
 
-# reek && \
-# echo -e "${HEIGLIGHT}
-# reek OK
-# ${NO_COLOR}" && \
+reek && \
+echo -e "${HEIGLIGHT}
+reek OK
+${NO_COLOR}" && \
 #
 # brakeman -l && \
 # echo -e "${HEIGLIGHT}
