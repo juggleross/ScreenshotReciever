@@ -20,11 +20,11 @@ brakeman -l && \
 echo -e "${HEIGLIGHT}
 brakeman OK
 ${NO_COLOR}" && \
-#
-# bundle-audit -u && \
-# echo -e "${HEIGLIGHT}
-# bundle-audit -u OK
-# ${NO_COLOR}" && \
+
+bundle-audit -u && \
+echo -e "${HEIGLIGHT}
+bundle-audit -u OK
+${NO_COLOR}" && \
 #
 # i18n-tasks health && \
 # echo -e "${HEIGLIGHT}
