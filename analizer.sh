@@ -15,11 +15,11 @@ reek && \
 echo -e "${HEIGLIGHT}
 reek OK
 ${NO_COLOR}" && \
-#
-# brakeman -l && \
-# echo -e "${HEIGLIGHT}
-# brakeman OK
-# ${NO_COLOR}" && \
+
+brakeman -l && \
+echo -e "${HEIGLIGHT}
+brakeman OK
+${NO_COLOR}" && \
 #
 # bundle-audit -u && \
 # echo -e "${HEIGLIGHT}
